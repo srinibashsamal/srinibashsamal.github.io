@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srinibash Samal - Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M64%2032C28.7%2032%200%2060.7%200%2096V416c0%2035.3%2028.7%2064%2064%2064H288V368c0-26.5%2021.5-48%2048-48H480V96c0-35.3-28.7-64-64-64H64zM480%20396.7V416c0%2035.3-28.7%2064-64%2064H336c-26.5%200-48-21.5-48-48V368c0-26.5%2021.5-48%2048-48h82.7L480%20396.7zM320%20352H288V480H416V352H320zM256%20176a64%2064%200%201%200%20-128%200%2064%2064%200%201%200%20128%200zM64%20128h96c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H64c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064h96c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H64c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064H224c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H64c-8.8%200-16-7.2-16-16s7.2-16%2016-16z%22%2F%3E%3C%2Fsvg%3E"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=JetBrains+Mono&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="progress-container"><div id="progress-bar"></div></div>
+
+    <nav>
+      <div class="nav-content">
+        <button
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-brand">
+          <span class="brand-full">Srinibash Samal</span
+          ><span class="brand-short">Srini</span>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-links" id="main-nav-links">
+            <li>
+              <a href="#home"
+                ><i class="fa-solid fa-house nav-link-icon"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#experience"
+                ><i class="fa-solid fa-briefcase nav-link-icon"></i>
+                Experience</a
+              >
+            </li>
+            <li>
+              <a href="#skills"
+                ><i class="fa-solid fa-lightbulb nav-link-icon"></i> Skills</a
+              >
+            </li>
+            <li>
+              <a href="#projects"
+                ><i class="fa-solid fa-folder-open nav-link-icon"></i>
+                Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1PPXqBcndBK_OLPjJdLidJxAgRbsiMiY4"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-file-arrow-down nav-link-icon"></i>
+                Resume</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-paper-plane nav-link-icon"></i>
+                Contact</a
+              >
+            </li>
+          </ul>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark/light theme"
+          >
+            <i id="theme-icon" class="fa-solid"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content-wrapper">
+          <div class="hero-text">
+            <h1>Hi, I'm Srinibash!</h1>
+            <p class="typewriter-container"><span id="typewriter"></span></p>
+            <p>
+              I'm passionate about data, Python, computer systems, and
+              generative AI. I love building useful, scalable solutions that
+              create real value. Currently, I'm diving deep into Data Science,
+              learning to transform raw data into actionable insights.
+            </p>
+            <p>
+              I'm always driven by one goal: to make an impact—no matter how
+              small my role might be in something bigger. Curious to learn
+              <a href="#experience" class="more-about-link">more about me?</a>
+            </p>
+            <div class="highlight reveal-on-scroll">
+              Full-Stack Developer | Exploring Data Insights
+            </div>
+            <div class="hero-action-buttons">
+              <a href="#projects" class="hero-action-button reveal-on-scroll">
+                <i class="fas fa-folder-open"></i> View My Work
+              </a>
+              <a href="#contact" class="hero-action-button reveal-on-scroll">
+                <i class="fas fa-paper-plane"></i> Contact Me
+              </a>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img
+              src="https://about.me/cdn-cgi/image/q=40,dpr=2,f=auto,fit=cover,w=620,h=413.3333333333333,gravity=0.505x0.137/https://assets.about.me/background/users/s/r/i/srinibash_samal_1583802466_945.jpg"
+              alt="Srinibash Samal"
+              class="hero-photo"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <p>My professional journey and roles I've held in the industry.</p>
+        <div class="experience-list">
+          <div class="experience-card card-base reveal-on-scroll">
+            <div class="experience-company">IQVIA</div>
+            <div class="experience-details">
+              <h3>Data Analyst</h3>
+              <div class="experience-date-location">
+                <span
+                  ><i class="fa-regular fa-calendar-days"></i> July 2025 -
+                  Present</span
+                >
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Bangalore,
+                  India</span
+                >
+              </div>
+              <div class="experience-technologies">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">Data Analysis</span
+                  ><span class="tech-tag">Clinical Data Management</span
+                  ><span class="tech-tag">LIMS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-card card-base reveal-on-scroll">
+            <div class="experience-company">Acuvate Software</div>
+            <div class="experience-details">
+              <h3>Software Engineer</h3>
+              <div class="experience-date-location">
+                <span
+                  ><i class="fa-regular fa-calendar-days"></i> Nov 2022 - May
+                  2025</span
+                >
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Hyderabad,
+                  India</span
+                >
+              </div>
+              <div class="experience-technologies">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">Open AI</span
+                  ><span class="tech-tag">Azure</span
+                  ><span class="tech-tag">Gen AI</span
+                  ><span class="tech-tag">RAG</span
+                  ><span class="tech-tag">LangChain</span
+                  ><span class="tech-tag">GPT</span
+                  ><span class="tech-tag">MS Fabric</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-card card-base reveal-on-scroll">
+            <div class="experience-company">Acuvate Software</div>
+            <div class="experience-details">
+              <h3>Software Engineer Trainee</h3>
+              <div class="experience-date-location">
+                <span
+                  ><i class="fa-regular fa-calendar-days"></i> May 2022 - Oct
+                  2022</span
+                >
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Hyderabad,
+                  India</span
+                >
+              </div>
+              <div class="experience-technologies">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">PostgerSQL</span
+                  ><span class="tech-tag">HTML</span
+                  ><span class="tech-tag">CSS</span
+                  ><span class="tech-tag">JavaScript</span
+                  ><span class="tech-tag">MS SQL</span
+                  ><span class="tech-tag">Langchain</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>Here are some of the technologies and tools I'm proficient with:</p>
+        <div class="skills-grid">
+          <div class="skills-category-card reveal-on-scroll">
+            <h3>Languages</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+          <div class="skills-category-card reveal-on-scroll">
+            <h3>Frameworks & Libraries</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">GPT Models</span>
+              <span class="tech-tag">Gradio</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+            </div>
+          </div>
+          <div class="skills-category-card reveal-on-scroll">
+            <h3>Databases</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MS SQL Server</span>
+              <span class="tech-tag">Azure SQL</span>
+              <span class="tech-tag">Vector Databases</span>
+            </div>
+          </div>
+          <div class="skills-category-card reveal-on-scroll">
+            <h3>Cloud & Platforms</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Microsoft Azure</span>
+              <span class="tech-tag">Azure Functions</span>
+              <span class="tech-tag">Azure OpenAI</span>
+              <span class="tech-tag">Azure Eventstream</span>
+              <span class="tech-tag">Microsoft Fabric</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+          </div>
+          <div class="skills-category-card reveal-on-scroll">
+            <h3>Tools & Concepts</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Git & GitHub</span>
+              <span class="tech-tag">Generative AI</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">Prompt Engineering</span>
+              <span class="tech-tag">Data Analysis</span>
+              <span class="tech-tag">API Development</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">Jupyter</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>My Work</h2>
+        <p>
+          A selection of my professional contributions and personal endeavors.
+        </p>
+
+        <div class="tabs-container">
+          <div class="tab-navigation">
+            <button
+              class="tab-button active"
+              data-tab-target="#tab-content-professional"
+            >
+              Projects
+            </button>
+            <button class="tab-button" data-tab-target="#tab-content-personal">
+              Personal Projects
+            </button>
+          </div>
+
+          <div class="tab-content-panels">
+            <div id="tab-content-professional" class="tab-content active">
+              <div class="projects-grid">
+                <div class="project-card card-base reveal-on-scroll">
+                  <div class="project-header">
+                    <h3>Real-Time Intelligence</h3>
+                    <span class="project-icon"
+                      ><i class="fa-solid fa-brain"></i
+                    ></span>
+                  </div>
+                  <p class="project-description">
+                    Built a real-time wind turbine monitoring system on
+                    Microsoft Fabric. Used OPC UA and Azure Eventstream to
+                    simulate, ingest, and visualize sensor data with alerting
+                    and transformation capabilities.
+                  </p>
+                  <div class="tech-tags project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Arduino</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Microsoft Fabric</span>
+                    <span class="tech-tag">KQL</span>
+                    <span class="tech-tag">Eventstream</span>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">Logic Apps</span>
+                  </div>
+                  <div class="project-footer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Kairos GitHub Repository"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-card card-base reveal-on-scroll">
+                  <div class="project-header">
+                    <h3>Kelley Drye - Budget Automation</h3>
+                    <span class="project-icon">
+                      <i class="fa-solid fa-calculator"></i
+                    ></span>
+                  </div>
+                  <p class="project-description">
+                    Developed an AI-driven budgeting system using Azure
+                    Functions and OpenAI to extract email data and automate
+                    Excel report generation, with integrated CRUD APIs and
+                    prompt-driven automation.
+                  </p>
+                  <div class="tech-tags project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Azure</span>
+                    <span class="tech-tag">Open AI</span>
+                    <span class="tech-tag">Azure Functions</span>
+                    <span class="tech-tag">Prompt Engineering</span>
+                    <span class="tech-tag">Excell Ops</span>
+                  </div>
+                  <div class="project-footer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Neighborly GitHub Repository"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-card card-base reveal-on-scroll">
+                  <div class="project-header">
+                    <h3>Carnival Corp - IT ChatBot</h3>
+                    <span class="project-icon"
+                      ><i class="fa-solid fa-robot"></i
+                    ></span>
+                  </div>
+                  <p class="project-description">
+                    Designed a multilingual chatbot for internal employee
+                    support using Azure OpenAI. Achieved 90%+ accuracy using an
+                    intent detector model and prompt-based multilingual
+                    responses.
+                  </p>
+                  <div class="tech-tags project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Azure</span>
+                    <span class="tech-tag">Open AI</span>
+                    <span class="tech-tag">GPT 4o</span>
+                    <span class="tech-tag">Prompt Engineering</span>
+                    <span class="tech-tag">Multilingual NLP</span>
+                    <span class="tech-tag">Azure Function Apps</span>
+                  </div>
+                  <div class="project-footer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="DevDuck GitHub Repository"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-card card-base reveal-on-scroll">
+                  <div class="project-header">
+                    <h3>Blakes - Bot Upgradation</h3>
+                    <span class="project-icon"
+                      ><i class="fa-solid fa-rocket"></i
+                    ></span>
+                  </div>
+                  <p class="project-description">
+                    Upgraded AI assistant from GPT-3.5 to GPT-4o with new
+                    capabilities and redesigned interaction flows. Integrated
+                    with a RAG architecture for enhanced context-aware
+                    responses.
+                  </p>
+                  <div class="tech-tags project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">GPT 4o</span>
+                    <span class="tech-tag">Prompt Engineering</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">RAG</span>
+                    <span class="tech-tag">Azure Function Apps</span>
+                  </div>
+                  <div class="project-footer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="DevDuck GitHub Repository"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-card card-base reveal-on-scroll">
+                  <div class="project-header">
+                    <h3>GPT Data Bot - Internal Practice</h3>
+                    <span class="project-icon"
+                      ><i class="fa-solid fa-chart-simple"></i
+                    ></span>
+                  </div>
+                  <p class="project-description">
+                    Built a data bot that connected to Azure SQL and used
+                    prompt-based interaction for report generation, charting,
+                    and real-time analysis using Vega-Lite visualizations.
+                  </p>
+                  <div class="tech-tags project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">GPT-3.5</span>
+                    <span class="tech-tag">Prompt Engineering</span>
+                    <span class="tech-tag">Gradio</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Vega-Lite</span>
+                    <span class="tech-tag">Azure Function Apps</span>
+                  </div>
+                  <div class="project-footer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="DevDuck GitHub Repository"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-content-personal" class="tab-content">
+              <div class="projects-grid">
+                <!-- Dummy Personal Project 1 -->
+                <div class="project-card card-base reveal-on-scroll">
+                  <div class="project-header">
+                    <h3>My Awesome CLI Tool</h3>
+                    <span class="project-icon"
+                      ><i class="fa-solid fa-terminal"></i
+                    ></span>
+                  </div>
+                  <p class="project-description">
+                    A handy command-line interface tool built with Python to
+                    automate various daily tasks and streamline workflows.
+                    Features include file organization, quick web searches, and
+                    system utility shortcuts.
+                  </p>
+                  <div class="tech-tags project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Click</span>
+                    <span class="tech-tag">Typer</span>
+                    <span class="tech-tag">Automation</span>
+                    <span class="tech-tag">CLI</span>
+                  </div>
+                  <div class="project-footer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Awesome CLI Tool GitHub Repository"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card card-base reveal-on-scroll">
+                  <div class="project-header">
+                    <h3>Personal Portfolio v1</h3>
+                    <span class="project-icon"
+                      ><i class="fa-solid fa-address-card"></i
+                    ></span>
+                  </div>
+                  <p class="project-description">
+                    An earlier version of my personal portfolio website, built
+                    from scratch using plain HTML, CSS, and JavaScript. Focused
+                    on learning web fundamentals and responsive design
+                    principles.
+                  </p>
+                  <div class="tech-tags project-tags">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript ES6</span>
+                    <span class="tech-tag">Responsive Design</span>
+                  </div>
+                  <div class="project-footer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Portfolio v1 GitHub Repository"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Portfolio v1 Live Demo"
+                      style="margin-left: 0.5rem"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          If you'd like to discuss opportunities, collaborate on a project, or
+          find out more about me? Let's connect!
+        </p>
+        <div class="contact-stack reveal-on-scroll">
+          <div class="linkedin-badge-container">
+            <div class="linkedin-badge-light">
+              <div
+                class="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="medium"
+                data-theme="light"
+                data-type="HORIZONTAL"
+                data-vanity="srinibashsamal"
+                data-version="v1"
+              >
+                <a
+                  class="badge-base__link LI-simple-link"
+                  href="https://in.linkedin.com/in/srinibashsamal?trk=profile-badge"
+                ></a>
+              </div>
+            </div>
+            <div class="linkedin-badge-dark">
+              <div
+                class="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="medium"
+                data-theme="dark"
+                data-type="HORIZONTAL"
+                data-vanity="srinibashsamal"
+                data-version="v1"
+              >
+                <a
+                  class="badge-base__link LI-simple-link"
+                  href="https://in.linkedin.com/in/srinibashsamal?trk=profile-badge"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-action-buttons">
+            <a href="mailto:hola2srini@gmail.com" class="hero-action-button">
+              <i class="fas fa-envelope"></i> Email Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="quotes">
+        <h2>Words to Code By</h2>
+        <div class="quote-container reveal-on-scroll">
+          <p class="quote-text" id="quote-text-content"></p>
+          <p class="quote-author" id="quote-author-content"></p>
+        </div>
+      </section>
+
+      <button
+        class="scroll-top"
+        id="scroll-top"
+        aria-label="Scroll to top"
+        style="display: none; opacity: 0"
+      >
+        <i class="fa-regular fa-circle-up"></i>
+      </button>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="mailto:hola2srini@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/srinibashsamal"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://twitter.com/srinibash_samal"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://instagram.com/srinibash_samal"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://facebook.com/sri.samal3"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </div>
+        <p class="footer-text">
+          ©
+          <span id="current-year"></span> Srinibash Samal · Designed and
+          developed with
+          <i class="fa-solid fa-heart fa-fade" style="color: #ff0000"></i>
+          Icons by
+          <a
+            href="https://fontawesome.com/search?ic=free"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Font Awesome</a
+          >
+          <br />
+          Code <i class="fa-solid fa-code fa-beat"></i> licensed under
+          <i class="fa-solid fa-scale-balanced fa-xs"></i>
+          <a
+            href="https://opensource.org/licenses/MIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MIT License</a
+          >
+          · Content licensed under
+          <i class="fa-brands fa-creative-commons fa-xs"></i>
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >BY-SA 4.0</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
